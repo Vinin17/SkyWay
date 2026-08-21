@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ 
+:root {
+  --cor-primaria: #123C40;
+  --cor-primaria-clara: #1B565C;
+  --cor-destaque: #14A38B;
+  --cor-dourado: #E0A526;
+  --cor-texto: #1F2A33;
+  --cor-texto-suave: #64748B;
+  --cor-fundo: #F6F8F9;
+  --cor-fundo-alt: #FFFFFF;
+  --cor-borda: #E3E7EB;
+ 
+  --fonte-titulo: 'Poppins', sans-serif;
+  --fonte-texto: 'Inter', sans-serif;
+ 
+  --raio: 14px;
+  --raio-pequeno: 8px;
+  --sombra: 0 10px 30px rgba(18, 60, 64, 0.10);
+  --sombra-hover: 0 16px 40px rgba(18, 60, 64, 0.16);
+  --transicao: all 0.25s ease;
+}
+ 
+html {
+  scroll-behavior: smooth;
+}
+ 
+body {
+  font-family: var(--fonte-texto);
+  color: var(--cor-texto);
+  background-color: var(--cor-fundo);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+ 
+img {
+  max-width: 100%;
+  display: block;
+}
+ 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ 
+ul {
+  list-style: none;
+}
+ 
+h1, h2, h3, h4 {
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  color: var(--cor-primaria);
+  line-height: 1.25;
+}
+ 
+.container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
