@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SkyWay — Fretamento de Voos Executivos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+ 
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="cabecalho">
+    <div class="container cabecalho-conteudo">
+      <a href="#topo" class="logo">
+        <span class="logo-icone">&#10148;</span>
+        <span class="logo-texto">SkyWay</span>
+      </a>
+ 
+      <input type="checkbox" id="menu-toggle" class="menu-toggle-input">
+      <label for="menu-toggle" class="menu-toggle-btn" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </label>
+ 
+      <nav class="menu">
+        <ul class="menu-lista">
+          <li><a href="#topo">Início</a></li>
+          <li><a href="#destinos">Destinos</a></li>
+          <li><a href="#vantagens">Vantagens</a></li>
+          <li><a href="#frota">Frota</a></li>
+          <li><a href="#como-funciona">Como funciona</a></li>
+          <li><a href="#contato" class="menu-btn-contato">Fale conosco</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+ 
+  <section class="hero" id="topo">
+    <div class="hero-overlay"></div>
+    <div class="container hero-conteudo">
+      <div class="hero-texto">
+        <span class="etiqueta">Bem-vindo de volta</span>
+        <h1>Olá! Para onde<br>você quer voar?</h1>
+        <p class="hero-subtitulo">Fretamento de helicópteros e aeronaves executivas sob demanda, com conforto e agilidade do início ao fim.</p>
+      </div>
+ 
+      <div class="caixa-busca">
+        <div class="campo-busca">
+          <span class="campo-rotulo">Local de saída</span>
+          <span class="campo-valor">📍 São Paulo, Congonhas (CGH)</span>
+        </div>
+        <div class="campo-busca">
+          <span class="campo-rotulo">Destino</span>
+          <span class="campo-valor campo-placeholder">📍 Para onde você quer ir?</span>
+        </div>
+        <div class="linha-dupla">
+          <div class="campo-busca campo-metade">
+            <span class="campo-rotulo">Data</span>
+            <span class="campo-valor">📅 12 Out, 2026</span>
+          </div>
+          <div class="campo-busca campo-metade">
+            <span class="campo-rotulo">Passageiros</span>
+            <span class="campo-valor">👤 2 Passageiros</span>
+          </div>
+        </div>
+        <button class="botao botao-primario botao-largo" type="button">Buscar voos</button>
+      </div>
+    </div>
+  </section>
+  <section class="secao secao-destinos" id="destinos">
+    <div class="container">
+      <div class="cabecalho-secao">
+        <span class="etiqueta">Explore</span>
+        <h2>Destinos populares</h2>
+        <p class="secao-subtitulo">Os trajetos mais procurados pelos nossos passageiros no último trimestre.</p>
+      </div>
+ 
+      <div class="grade-destinos">
+        <a href="#" class="cartao-destino">
+          <img src="images/destino-porto-alegre.jpg" alt="Vista aérea da orla de Porto Alegre ao entardecer" class="cartao-destino-img">
+          <div class="cartao-destino-info">
+            <h3>Porto Alegre</h3>
+            <p>Capital gaúcha</p>
+          </div>
+        </a>
+ 
+        <a href="#" class="cartao-destino">
+          <img src="images/destino-gramado.jpg" alt="Vista panorâmica da cidade de Gramado entre montanhas" class="cartao-destino-img">
+          <div class="cartao-destino-info">
+            <h3>Gramado</h3>
+            <p>Serra e sofisticação</p>
+          </div>
+        </a>
+ 
+        <a href="#" class="cartao-destino">
+          <img src="images/destino-torres.jpg" alt="Praia e falésias da cidade de Torres" class="cartao-destino-img">
+          <div class="cartao-destino-info">
+            <h3>Torres</h3>
+            <p>Litoral único</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
