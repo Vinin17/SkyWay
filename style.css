@@ -160,3 +160,206 @@ h1, h2, h3, h4 {
   transform: rotate(45deg);
   display: inline-block;
 }
+
+.menu-lista {
+  display: flex;
+  align-items: center;
+  gap: 34px;
+}
+ 
+.menu-lista a {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--cor-texto);
+  transition: var(--transicao);
+}
+ 
+.menu-lista a:hover {
+  color: var(--cor-destaque);
+}
+ 
+.menu-btn-contato {
+  background-color: var(--cor-primaria);
+  color: #FFFFFF !important;
+  padding: 10px 22px;
+  border-radius: var(--raio-pequeno);
+}
+ 
+.menu-btn-contato:hover {
+  background-color: var(--cor-primaria-clara);
+}
+.menu-toggle-input {
+  display: none;
+}
+ 
+.menu-toggle-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 200;
+}
+ 
+.menu-toggle-btn span {
+  width: 26px;
+  height: 3px;
+  background-color: var(--cor-primaria);
+  border-radius: 2px;
+  transition: var(--transicao);
+}
+
+.hero {
+  position: relative;
+  padding: 90px 0 110px;
+  background-color: var(--cor-primaria);
+  background-image: linear-gradient(120deg, rgba(18,60,64,0.94), rgba(18,60,64,0.75)), url("../images/hero-helicoptero.jpg");
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+ 
+.hero-conteudo {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 60px;
+  align-items: center;
+}
+ 
+.hero-texto .etiqueta {
+  color: #7FE0CD;
+}
+ 
+.hero-texto h1 {
+  font-size: 2.6rem;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+ 
+.hero-subtitulo {
+  color: #D6E4E3;
+  font-size: 1.05rem;
+  max-width: 460px;
+}
+.caixa-busca {
+  background-color: var(--cor-fundo-alt);
+  border-radius: var(--raio);
+  padding: 26px;
+  box-shadow: var(--sombra-hover);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+ 
+.campo-busca {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio-pequeno);
+  padding: 10px 16px;
+  transition: var(--transicao);
+}
+ 
+.campo-busca:hover {
+  border-color: var(--cor-destaque);
+}
+ 
+.campo-rotulo {
+  font-size: 0.72rem;
+  color: var(--cor-texto-suave);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+ 
+.campo-valor {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--cor-texto);
+}
+ 
+.campo-placeholder {
+  color: var(--cor-texto-suave);
+  font-weight: 500;
+}
+ 
+.linha-dupla {
+  display: flex;
+  gap: 14px;
+}
+ 
+.campo-metade {
+  flex: 1;
+}
+.secao {
+  padding: 100px 0;
+}
+ 
+.cabecalho-secao {
+  text-align: center;
+  max-width: 640px;
+  margin: 0 auto 56px;
+}
+ 
+.cabecalho-secao h2 {
+  font-size: 2.1rem;
+  margin-bottom: 14px;
+}
+ 
+.secao-subtitulo {
+  color: var(--cor-texto-suave);
+  font-size: 1rem;
+}
+
+.grade-destinos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+ 
+.cartao-destino {
+  position: relative;
+  border-radius: var(--raio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  transition: var(--transicao);
+  aspect-ratio: 3 / 4;
+}
+ 
+.cartao-destino:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--sombra-hover);
+}
+ 
+.cartao-destino-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: var(--transicao);
+}
+ 
+.cartao-destino:hover .cartao-destino-img {
+  transform: scale(1.06);
+}
+ 
+.cartao-destino-info {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 22px 20px;
+  background: linear-gradient(0deg, rgba(18,60,64,0.9), rgba(18,60,64,0));
+}
+ 
+.cartao-destino-info h3 {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+}
+ 
+.cartao-destino-info p {
+  color: #9FDCCF;
+  font-size: 0.88rem;
+  font-weight: 500;
+}
