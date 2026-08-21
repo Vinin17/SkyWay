@@ -363,3 +363,393 @@ h1, h2, h3, h4 {
   font-size: 0.88rem;
   font-weight: 500;
 }
+.secao-vantagens {
+  background-color: var(--cor-fundo-alt);
+}
+ 
+.grade-vantagens {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+ 
+.caixa1, .caixa2, .caixa3, .caixa4 {
+  background-color: var(--cor-fundo);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  padding: 32px 24px;
+  text-align: center;
+  transition: var(--transicao);
+}
+ 
+.caixa1:hover, .caixa2:hover, .caixa3:hover, .caixa4:hover {
+  border-color: var(--cor-destaque);
+  transform: translateY(-6px);
+  box-shadow: var(--sombra);
+}
+ 
+.icone-vantagem {
+  font-size: 1.8rem;
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  background-color: rgba(20, 163, 139, 0.12);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+ 
+.caixa1 h3, .caixa2 h3, .caixa3 h3, .caixa4 h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+ 
+.caixa1 p, .caixa2 p, .caixa3 p, .caixa4 p {
+  font-size: 0.9rem;
+  color: var(--cor-texto-suave);
+}
+.grade-frota {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+ 
+.cartao-aeronave {
+  position: relative;
+  background-color: var(--cor-fundo-alt);
+  border: 1px solid var(--cor-borda);
+  border-radius: var(--raio);
+  overflow: hidden;
+  box-shadow: var(--sombra);
+  transition: var(--transicao);
+}
+ 
+.cartao-aeronave:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--sombra-hover);
+}
+ 
+.cartao-aeronave-premium {
+  border-color: var(--cor-dourado);
+}
+ 
+.selo-premium {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 2;
+  background-color: var(--cor-dourado);
+  color: var(--cor-primaria);
+  font-family: var(--fonte-titulo);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+ 
+.cartao-aeronave-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+ 
+.cartao-aeronave-info {
+  padding: 22px;
+}
+ 
+.cartao-aeronave-info h3 {
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+}
+ 
+.lista-comodidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+ 
+.lista-comodidades li {
+  font-size: 0.8rem;
+  color: var(--cor-primaria);
+  background-color: rgba(20, 163, 139, 0.1);
+  padding: 5px 12px;
+  border-radius: 20px;
+}
+ 
+.linha-preco {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 16px;
+  border-top: 1px dashed var(--cor-borda);
+}
+ 
+.preco {
+  font-family: var(--fonte-titulo);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--cor-dourado);
+}
+ 
+.preco small {
+  font-family: var(--fonte-texto);
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--cor-texto-suave);
+}
+.secao-como-funciona {
+  background-color: var(--cor-fundo);
+}
+ 
+.linha-passos {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+ 
+.passo {
+  flex: 1;
+  background-color: var(--cor-fundo-alt);
+  border-radius: var(--raio);
+  padding: 34px 26px;
+  box-shadow: var(--sombra);
+  text-align: center;
+  transition: var(--transicao);
+}
+ 
+.passo:hover {
+  transform: translateY(-6px);
+}
+ 
+.passo-numero {
+  width: 46px;
+  height: 46px;
+  line-height: 46px;
+  margin: 0 auto 18px;
+  background-color: var(--cor-primaria);
+  color: #FFFFFF;
+  font-family: var(--fonte-titulo);
+  font-weight: 700;
+  border-radius: 50%;
+}
+ 
+.passo h3 {
+  font-size: 1.05rem;
+  margin-bottom: 8px;
+}
+ 
+.passo p {
+  font-size: 0.9rem;
+  color: var(--cor-texto-suave);
+}
+.secao-cta {
+  background-color: var(--cor-primaria);
+  padding: 80px 0;
+}
+ 
+.caixa-cta {
+  text-align: center;
+}
+ 
+.caixa-cta h2 {
+  color: #FFFFFF;
+  font-size: 2rem;
+  margin-bottom: 12px;
+}
+ 
+.caixa-cta p {
+  color: #C9DEDC;
+  margin-bottom: 30px;
+  font-size: 1.05rem;
+}
+.rodape {
+  background-color: #0D2C2F;
+  color: #B9CBC9;
+  padding-top: 64px;
+}
+ 
+.rodape-conteudo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+  padding-bottom: 48px;
+}
+ 
+.rodape-coluna {
+  flex: 1;
+  min-width: 180px;
+}
+ 
+.rodape-sobre {
+  flex: 1.6;
+  min-width: 240px;
+}
+ 
+.rodape .logo-texto,
+.rodape .logo-icone {
+  color: #FFFFFF;
+}
+ 
+.logo-rodape {
+  margin-bottom: 14px;
+}
+ 
+.rodape-sobre p {
+  font-size: 0.9rem;
+  max-width: 320px;
+}
+ 
+.rodape-coluna h4 {
+  color: #FFFFFF;
+  font-size: 0.95rem;
+  margin-bottom: 18px;
+}
+ 
+.rodape-lista li {
+  margin-bottom: 10px;
+  font-size: 0.88rem;
+}
+ 
+.rodape-lista a {
+  transition: var(--transicao);
+}
+ 
+.rodape-lista a:hover {
+  color: var(--cor-destaque);
+}
+ 
+.rodape-base {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 22px 0;
+  text-align: center;
+  font-size: 0.82rem;
+}
+@media (max-width: 960px) {
+  .hero-conteudo {
+    grid-template-columns: 1fr;
+  }
+ 
+  .hero-texto {
+    text-align: center;
+    margin: 0 auto;
+  }
+ 
+  .hero-subtitulo {
+    margin: 0 auto;
+  }
+ 
+  .grade-frota,
+  .grade-vantagens {
+    grid-template-columns: repeat(2, 1fr);
+  }
+ 
+  .linha-passos {
+    flex-wrap: wrap;
+  }
+ 
+  .passo {
+    flex-basis: calc(50% - 14px);
+  }
+}
+@media (max-width: 640px) {
+ 
+  .secao {
+    padding: 64px 0;
+  }
+ 
+  .menu-toggle-btn {
+    display: flex;
+  }
+ 
+  .menu {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: min(78%, 320px);
+    height: 100vh;
+    background-color: var(--cor-fundo-alt);
+    box-shadow: -10px 0 30px rgba(18, 60, 64, 0.15);
+    transition: right 0.3s ease;
+    padding: 100px 30px;
+  }
+ 
+  .menu-lista {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 26px;
+  }
+ 
+  .menu-toggle-input:checked ~ .menu {
+    right: 0;
+  }
+ 
+  .menu-toggle-input:checked ~ .menu-toggle-btn span:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+ 
+  .menu-toggle-input:checked ~ .menu-toggle-btn span:nth-child(2) {
+    opacity: 0;
+  }
+ 
+  .menu-toggle-input:checked ~ .menu-toggle-btn span:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+ 
+  .hero {
+    padding: 60px 0 80px;
+  }
+ 
+  .hero-texto h1 {
+    font-size: 1.9rem;
+  }
+ 
+  .linha-dupla {
+    flex-direction: column;
+  }
+ 
+  .cabecalho-secao h2 {
+    font-size: 1.6rem;
+  }
+ 
+  .grade-destinos,
+  .grade-vantagens,
+  .grade-frota {
+    grid-template-columns: 1fr;
+  }
+ 
+  .cartao-destino {
+    aspect-ratio: 16 / 10;
+  }
+ 
+  .linha-passos {
+    flex-direction: column;
+  }
+ 
+  .passo {
+    flex-basis: 100%;
+  }
+ 
+  .rodape-conteudo {
+    flex-direction: column;
+    gap: 32px;
+  }
+ 
+  .caixa-cta h2 {
+    font-size: 1.6rem;
+  }
+ 
+  .linha-preco {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 14px;
+  }
+ 
+  .linha-preco .botao {
+    width: 100%;
+  }
+}
